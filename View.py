@@ -33,6 +33,10 @@ class View(Tk):
         self.lbl_result, self.lbl_time, self.lbl_error = self.create_all_labels()
         self.char_input = self.create_input_entry()
 
+        # Bind Enter key
+        self.bind("<Return>", lambda event: self.controller.click_btn_send())
+        # TODO peale mängu uuesti enter vajutada lööb samad andmed leaderboardi. Miks?
+
     def main(self):
         self.mainloop()
 
