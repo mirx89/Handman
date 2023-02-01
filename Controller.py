@@ -5,6 +5,7 @@ from Model import Model
 from View import View
 from os import path
 
+
 class Controller:
 
     def __init__(self, db_name=None):

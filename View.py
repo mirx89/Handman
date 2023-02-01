@@ -5,6 +5,7 @@ from tkinter import ttk
 
 from PIL import Image, ImageTk
 
+
 class View(Tk):
 
     def __init__(self, controller, model):
@@ -22,7 +23,7 @@ class View(Tk):
         self.title("Hangman")
         self.center(self)
 
-        # Create two frames
+        # Create three frames
         self.frame_top, self.frame_bottom, self.frame_image = self.create_two_frames()
 
         self.image = ImageTk.PhotoImage(Image.open(self.model.images_files[len(self.model.images_files) - 1]))
@@ -35,7 +36,7 @@ class View(Tk):
 
         # Bind Enter key
         self.bind("<Return>", lambda event: self.controller.click_btn_send())
-        # TODO peale mängu uuesti enter vajutada lööb samad andmed leaderboardi. Miks?
+        """Peale mängu uuesti enter vajutada lööb samad andmed leaderboardi. Miks?"""
 
     def main(self):
         self.mainloop()
@@ -160,7 +161,7 @@ class View(Tk):
         my_table.heading("misses", text="Wrong letters", anchor=CENTER)
         my_table.heading("game_time", text="Time", anchor=CENTER)
 
-        #Add data into table
+        # Add data into table
         x = 0
         for p in data:
             # From file format(%Y-%m-%d %T) to show format (%d.%m.%Y %T)

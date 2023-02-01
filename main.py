@@ -3,10 +3,11 @@ import os.path
 from Controller import Controller
 from sys import argv  # Read from command line
 
+
 class Hangman:
 
     def __init__(self):
-         Controller(db_name).main()
+        Controller(db_name).main()
 
 
 if __name__ == "__main__":
