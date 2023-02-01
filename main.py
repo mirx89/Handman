@@ -11,7 +11,6 @@ class Hangman:
 
 
 if __name__ == "__main__":
-    # TODO if letter inputed second time read as error
     db_name = None
     if len(argv) == 2:
         if os.path.exists(argv[1]):
