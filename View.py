@@ -133,7 +133,8 @@ class View(Tk):
 
         return frame
 
-    def generate_leaderboard(self, frame, data):
+    @staticmethod
+    def generate_leaderboard(frame, data):
         # Table view
         my_table = ttk.Treeview(frame)
 

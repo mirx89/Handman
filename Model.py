@@ -56,7 +56,8 @@ class Model:
                 self.user_word[x] = user_char.upper()
             x += 1
 
-    def chars_to_list(self, string):
+    @staticmethod
+    def chars_to_list(string):
         # Sting to List : Test => ["T", "e", "s", "t"]
         chars = []
         chars[:0] = string
