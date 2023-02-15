@@ -24,7 +24,7 @@ class Model:
         # print(self.new_word) # for testing
         self.user_word = []
         self.all_user_chars = []
-        self.counter = 0  # ? TODO IS neede or not?
+        self.counter = 0  # ?
         # All letter replace _
         for x in range(len(self.new_word)):
             self.user_word.append("_")
